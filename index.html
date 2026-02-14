@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Resource Monitor</title>
+    <link rel="stylesheet" href="resources/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>⚡ System Resource Monitor</h1>
+        
+        <div class="stats-grid">
+            <!-- CPU Stats Card -->
+            <div class="stat-card">
+                <div class="stat-title">CPU Usage</div>
+                <div class="stat-value" id="cpu-value">--</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="cpu-bar" style="width: 0%"></div>
+                </div>
+            </div>
+
+            <!-- Memory Stats Card -->
+            <div class="stat-card">
+                <div class="stat-title">Memory</div>
+                <div class="stat-value" id="memory-value">--</div>
+                <div class="stat-details" id="memory-details">-- GB / -- GB</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="memory-bar" style="width: 0%"></div>
+                </div>
+            </div>
+
+            <!-- Disk Stats Card -->
+            <div class="stat-card">
+                <div class="stat-title">Disk Usage</div>
+                <div class="stat-value" id="disk-value">--</div>
+                <div class="stat-details" id="disk-details">-- GB / -- GB</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="disk-bar" style="width: 0%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="status" id="status">Connecting...</div>
+    </div>
+
+    <script src="resources/script.js"></script>
+</body>
+</html>
